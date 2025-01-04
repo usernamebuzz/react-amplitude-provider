@@ -36,13 +36,14 @@ yarn add react-amplitude-provider
 - ⚡️ Supports Next.js
 
 ### Next.js Usage
+
 ```tsx
-import { AmplitudeProvider } from 'react-amplitude-provider/next';
+import { AmplitudeProvider } from 'react-amplitude-provider/next'
 ```
 
 -> Add /next in import path
 
-### Usage
+### React Usage
 
 1. Wrap your app with AmplitudeProvider:
 
@@ -142,13 +143,14 @@ yarn add react-amplitude-provider
 - ⚡️ Next.js 지원
 
 ### Next.js에서 사용법
+
 ```tsx
-import { AmplitudeProvider } from 'react-amplitude-provider/next';
+import { AmplitudeProvider } from 'react-amplitude-provider/next'
 ```
+
 -> import path에 /next를 붙입니다.
 
-
-### 사용법
+### React에서 사용법
 
 1. AmplitudeProvider로 앱 감싸기:
 
