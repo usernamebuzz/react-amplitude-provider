@@ -6,8 +6,16 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./next": "./dist/next.js"
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./next": {
+      "import": "./dist/esm/next.js",
+      "require": "./dist/cjs/next.js",
+      "types": "./dist/next.d.ts"
+    }
   },
   "files": [
     "dist",
