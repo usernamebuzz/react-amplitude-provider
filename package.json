@@ -1,0 +1,65 @@
+{
+  "name": "react-amplitude-provider",
+  "version": "1.0.0",
+  "description": "Amplitude analytics integration for React applications",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usernamebuzz/react-amplitude-provider"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --module ES2015 --outDir dist/esm",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "format:internal": "prettier --config .prettierrc.internal.json --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "@amplitude/analytics-browser": ">=1.0.0",
+    "@amplitude/plugin-session-replay-browser": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "jsdom": "^21.1.2",
+    "prettier": "^2.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.8"
+  },
+  "type": "module"
+}

@@ -1,0 +1,3 @@
+export const AMPLITUDE_CONSTANTS = {
+  SESSION_REPLAY_SAMPLE_RATE: 1.0,
+} as const
