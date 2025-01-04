@@ -4,7 +4,7 @@ import React from 'react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { AmplitudeContext } from '../amplitude-provider'
-import useAmplitude from '../use-amplitude'
+import { useAmplitude } from '../use-amplitude'
 
 describe('useAmplitude', () => {
   const mockLogEvent = vi.fn()
