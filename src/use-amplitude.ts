@@ -11,7 +11,7 @@ import {
   ShareProperties,
 } from './types/amplitude'
 
-export default function useAmplitude() {
+export function useAmplitude() {
   const {
     logEvent,
     setUserProperties,
