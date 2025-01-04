@@ -33,6 +33,14 @@ yarn add react-amplitude-provider
 - 🔒 TypeScript support
 - 🎯 Session replay support
 - 💡 Customizable tracking options
+- ⚡️ Supports Next.js
+
+### Next.js Usage
+```tsx
+import { AmplitudeProvider } from 'react-amplitude-provider/next';
+```
+
+-> Add /next in import path
 
 ### Usage
 
@@ -131,6 +139,14 @@ yarn add react-amplitude-provider
 - 🔒 TypeScript 지원
 - 🎯 세션 리플레이 지원
 - 💡 커스터마이징 가능한 트래킹 옵션
+- ⚡️ Next.js 지원
+
+### Next.js에서 사용법
+```tsx
+import { AmplitudeProvider } from 'react-amplitude-provider/next';
+```
+-> import path에 /next를 붙입니다.
+
 
 ### 사용법
 
