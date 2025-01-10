@@ -1,6 +1,6 @@
 {
   "name": "react-amplitude-provider",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Amplitude analytics integration for React applications",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -22,8 +22,23 @@
     "LICENSE",
     "README.md"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "amplitude",
+    "react",
+    "next.js",
+    "analytics",
+    "provider",
+    "react-amplitude-provider",
+    "amplitude-provider",
+    "amplitude-analytics",
+    "amplitude-react",
+    "amplitude-next.js",
+    "amplitude-analytics-provider",
+    "logger",
+    "react-logger",
+    "next.js-logger",
+    "amplitude-logger"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
